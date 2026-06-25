@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Automation Agent Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            margin: 0;
+            padding: 40px;
+            height: 2000px; /* Force scrollbar */
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            color: #000;
+        }
+        button {
+            background-color: #4ef081;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #3cd070;
+        }
+        .click-status, .scroll-status, .dbl-click-status {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Automation Test Environment</h1>
+        <p>This page helps verify the correctness of the automation tools.</p>
+        
+        <label for="text-input">Type text here:</label>
+        <input type="text" id="text-input" placeholder="Type here...">
+        
+        <button id="click-btn" onclick="document.getElementById('click-status').innerText = 'Button was clicked!'">Click Me</button>
+        <div id="click-status" class="click-status">Button status: Idle</div>
+
+        <button id="dbl-click-btn" ondblclick="document.getElementById('dbl-click-status').innerText = 'Button was double clicked!'">Double Click Me</button>
+        <div id="dbl-click-status" class="dbl-click-status">Double click status: Idle</div>
+    </div>
+
+    <div style="margin-top: 1000px;" id="scroll-target">
+        <h2>You've scrolled down!</h2>
+        <p>This is the scroll target.</p>
+    </div>
+
+    <script>
+        // Track coordinate clicks on document
+        document.addEventListener('click', (e) => {
+            console.log(`Document clicked at coordinates: X=${e.clientX}, Y=${e.clientY}`);
+        });
+    </script>
+</body>
+</html>

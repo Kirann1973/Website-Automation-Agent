@@ -1,0 +1,60 @@
+2026-06-25 10:55:05 [INFO] root - Logging configured successfully. Logs are saved to /Users/kiran/Desktop/Website-Automation-Agent/automation.log
+2026-06-25 10:55:05 [INFO] config - Configuration loaded: HEADLESS=False, DEFAULT_TIMEOUT=30000, SCREENSHOT_DIR=/Users/kiran/Desktop/Website-Automation-Agent/screenshots
+2026-06-25 10:55:05 [INFO] verifier - Starting website automation verification test...
+2026-06-25 10:55:05 [INFO] tools - Initializing Playwright and launching Chromium (headless=False)...
+2026-06-25 10:55:05 [INFO] tools - Cleaning up and closing browser resources...
+2026-06-25 10:55:09 [INFO] tools - Browser launched and new page opened successfully.
+2026-06-25 10:55:09 [INFO] tools - Navigating to URL: file:///Users/kiran/Desktop/Website-Automation-Agent/test_page.html
+2026-06-25 10:55:09 [INFO] tools - Successfully navigated to file:///Users/kiran/Desktop/Website-Automation-Agent/test_page.html. Response status: 200
+2026-06-25 10:55:10 [INFO] tools - Alias type_text called for selector '#text-input'. delegating to send_keys.
+2026-06-25 10:55:10 [INFO] tools - Sending keys/text to element '#text-input'. Text length: 25 characters
+2026-06-25 10:55:10 [INFO] tools - Successfully filled element '#text-input' with text.
+2026-06-25 10:55:11 [INFO] tools - Performing double click on element: '#dbl-click-btn'
+2026-06-25 10:55:11 [INFO] tools - Double click executed successfully on element '#dbl-click-btn'.
+2026-06-25 10:55:12 [INFO] tools - Performing click at coordinates: (x=123, y=269)
+2026-06-25 10:55:12 [INFO] tools - Click executed successfully at (x=123, y=269)
+2026-06-25 10:55:13 [INFO] tools - Scrolling page down by 800 pixels.
+2026-06-25 10:55:13 [INFO] tools - Scroll action executed successfully.
+2026-06-25 10:55:14 [INFO] tools - Taking screenshot and saving to: /Users/kiran/Desktop/Website-Automation-Agent/screenshots/test_verification.png
+2026-06-25 10:55:15 [INFO] tools - Screenshot successfully saved to /Users/kiran/Desktop/Website-Automation-Agent/screenshots/test_verification.png
+2026-06-25 10:55:15 [INFO] verifier - Screenshot taken successfully: /Users/kiran/Desktop/Website-Automation-Agent/screenshots/test_verification.png
+2026-06-25 10:55:15 [INFO] tools - Scrolling page up by 400 pixels.
+2026-06-25 10:55:15 [INFO] tools - Scroll action executed successfully.
+2026-06-25 10:55:16 [INFO] verifier - All automation tools verified successfully!
+2026-06-25 10:55:16 [INFO] tools - Explicit request received to close browser.
+2026-06-25 10:55:16 [INFO] tools - Cleaning up and closing browser resources...
+2026-06-25 10:55:16 [INFO] tools - Page closed successfully.
+2026-06-25 10:55:16 [INFO] tools - Browser context closed successfully.
+2026-06-25 10:55:16 [INFO] tools - Browser closed successfully.
+2026-06-25 10:55:16 [INFO] tools - Playwright engine stopped.
+2026-06-25 10:57:03 [INFO] root - Logging configured successfully. Logs are saved to /Users/kiran/Desktop/Website-Automation-Agent/automation.log
+2026-06-25 10:57:03 [INFO] config - Configuration loaded: HEADLESS=False, DEFAULT_TIMEOUT=30000, SCREENSHOT_DIR=/Users/kiran/Desktop/Website-Automation-Agent/screenshots
+2026-06-25 10:57:03 [INFO] root - Logging configured successfully. Logs are saved to /Users/kiran/Desktop/Website-Automation-Agent/automation.log
+2026-06-25 10:57:03 [INFO] agent - Initializing Agent Workflow...
+2026-06-25 10:57:03 [INFO] tools - Initializing Playwright and launching Chromium (headless=False)...
+2026-06-25 10:57:03 [INFO] tools - Cleaning up and closing browser resources...
+2026-06-25 10:57:04 [INFO] tools - Browser launched and new page opened successfully.
+2026-06-25 10:57:04 [INFO] tools - Navigating to URL: https://ui.shadcn.com/docs/forms/react-hook-form
+2026-06-25 10:57:06 [INFO] tools - Successfully navigated to https://ui.shadcn.com/docs/forms/react-hook-form. Response status: 200
+2026-06-25 10:57:08 [INFO] agent - Scrolling down to ensure form elements are visible...
+2026-06-25 10:57:08 [INFO] tools - Scrolling page down by 350 pixels.
+2026-06-25 10:57:08 [INFO] tools - Scroll action executed successfully.
+2026-06-25 10:57:09 [INFO] agent - Searching for input element labeled 'Username'...
+2026-06-25 10:57:09 [INFO] agent - Found element via label 'for' attribute association: #form-rhf-input-username
+2026-06-25 10:57:09 [INFO] tools - Alias type_text called for selector '#form-rhf-input-username'. delegating to send_keys.
+2026-06-25 10:57:09 [INFO] tools - Sending keys/text to element '#form-rhf-input-username'. Text length: 17 characters
+2026-06-25 10:57:09 [INFO] tools - Successfully filled element '#form-rhf-input-username' with text.
+2026-06-25 10:57:10 [INFO] agent - Searching for textarea element labeled 'Description'...
+2026-06-25 10:57:10 [INFO] agent - Found element via label 'for' attribute association: #form-rhf-demo-description
+2026-06-25 10:57:10 [INFO] tools - Alias type_text called for selector '#form-rhf-demo-description'. delegating to send_keys.
+2026-06-25 10:57:10 [INFO] tools - Sending keys/text to element '#form-rhf-demo-description'. Text length: 94 characters
+2026-06-25 10:57:10 [INFO] tools - Successfully filled element '#form-rhf-demo-description' with text.
+2026-06-25 10:57:12 [INFO] tools - Taking screenshot and saving to: /Users/kiran/Desktop/Website-Automation-Agent/screenshots/shadcn_form_success.png
+2026-06-25 10:57:12 [INFO] tools - Screenshot successfully saved to /Users/kiran/Desktop/Website-Automation-Agent/screenshots/shadcn_form_success.png
+2026-06-25 10:57:12 [INFO] agent - Orchestration completed successfully. Success screenshot saved to /Users/kiran/Desktop/Website-Automation-Agent/screenshots/shadcn_form_success.png
+2026-06-25 10:57:12 [INFO] tools - Explicit request received to close browser.
+2026-06-25 10:57:12 [INFO] tools - Cleaning up and closing browser resources...
+2026-06-25 10:57:12 [INFO] tools - Page closed successfully.
+2026-06-25 10:57:12 [INFO] tools - Browser context closed successfully.
+2026-06-25 10:57:12 [INFO] tools - Browser closed successfully.
+2026-06-25 10:57:12 [INFO] tools - Playwright engine stopped.
